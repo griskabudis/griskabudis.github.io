@@ -635,7 +635,35 @@
 		padding: 4rem 2rem;
 		z-index: 3;
 	}
+	
+		#wrapper:before {
+			content: '';
+			display: block;
+		}
+		
+		@media screen and (max-width: 480px) {
 
+			#wrapper {
+				padding: 2rem;
+			}
+
+		}
+		
+		@media screen and (max-width: 1680px) {
+
+			#wrapper {
+				padding: 3rem 2rem;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#wrapper {
+				padding: 2rem 1rem;
+			}
+
+		}
 
 /* Header */
 /*ftw*/
