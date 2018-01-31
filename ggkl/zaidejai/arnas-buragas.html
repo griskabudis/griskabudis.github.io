@@ -1,52 +1,46 @@
 <!doctype html>
 <html>
 
-    
-<!-- Mirrored from www.lkl.lt/zaidejai/adas-juskevicius by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2018 21:23:20 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
+
+	<script>
+function myFunction() {
+
+		var number = "1";
+    document.getElementById("lygosTaskai").innerHTML = number;
+	
+		var number = "2";
+    document.getElementById("lygosReb").innerHTML = number;
+	
+		var number = "3";
+    document.getElementById("lygosPerdav").innerHTML = number;
+	
+		var number = "4";
+    document.getElementById("lygosPraz").innerHTML = number;
+
+}
+</script>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Arnas Buragas</title>
         <meta name="description" content="">
         <meta name="format-detection" content="telephone=no">
-        <!-- CSRF Token -->
         <meta name="csrf-token" content="eHSfVsSrrv2C7a7agOjyZNhP6pSo2ASQhdC5m6W6">
- 
-        <!--Facebook tags-->
         <meta property="og:image" content="../images/lkl-facebook-new.png" />
         <meta property="og:description" content="Oficiali Lietuvos Krepšinio Lygos svetainė. 25-asis sezonas jau čia." />
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,700,900,900italic&amp;subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="../css/vendor.css">
         <link rel="stylesheet" href="../css/main28ef.css?v157">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        
-        <!-- Widget integration part -->
         <script type="text/javascript" src="../../widgets.baskethotel.com/static/scripts/api/api2283.js?v=905&amp;ver=4.5.10"></script>
         <link rel="stylesheet" href="../css/widgets.css">
         
 
-                
-        <!-- Facebook Pixel Code -->
-        <script>
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          '../../connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '1530823553672506');
-          fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-          src="https://www.facebook.com/tr?id=1530823553672506&amp;ev=PageView&amp;noscript=1"
-        /></noscript>
-        <!-- End Facebook Pixel Code -->
     </head>
 
-    <body>
+    <body onload="myFunction()">
 
             <div class="header-holder">
                 <div class="header-sticky">
@@ -135,7 +129,7 @@
                             <div class="chart-value">0</div>
                         </div>
                         <div class="league-chart"  style="height:5px; margin-top:120px;">
-                            <div class="chart-value">0</div>
+                            <div class="chart-value"><span id="lygosTaskai"></span></div>
                         </div>
                     </div>
                     <div class="metric-label">
@@ -148,7 +142,7 @@
                             <div class="chart-value">0</div>
                         </div>
                         <div class="league-chart"  style="height:5px; margin-top:120px;">
-                            <div class="chart-value">0</div>
+                            <div class="chart-value"><span id="lygosReb"></span></div>
                         </div>
                     </div>
                     <div class="metric-label">
